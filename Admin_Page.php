@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Management System</title>
-    <link rel="stylesheet" href="design.css">
+    <title>Document</title>
 </head>
 <body>
-    <h2>Gym Management System</h2>
+    <h2 align="center">Admin Page!</h2>
 </body>
 </html>
