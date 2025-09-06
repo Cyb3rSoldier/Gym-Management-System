@@ -27,8 +27,7 @@
             <button type="submit" name="login">login</button>
         </form>
         <br>
-        <p>Don't have Account? <a href="#mem_reg">register </a>here!</p>
-
+         <p align="center">Don't have Account? <a href="member_reg.php"><u><b> <big>Register</big></b></u> </a>here!</p>
     </div>
     <br><br>
     <a class="backHome" href="index.php"><u>Back to HOME</u></a>

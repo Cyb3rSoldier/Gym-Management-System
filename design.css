@@ -80,7 +80,7 @@ a {
     margin: 5vh auto;
     margin-bottom: 10vh !important;
     border-radius: 20px;
-    width: 600px;
+    width: 500px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
@@ -105,7 +105,7 @@ a {
 .form form label {
     margin-bottom: 5px;
     font-weight: bold;
-    font-size: .7rem;
+    font-size: .9rem;
 }
 
 .form form input,
@@ -113,7 +113,7 @@ a {
     padding: 8px 12px;
     border-radius: 10px;
     border: none;
-    font-size: .7rem;
+    font-size: .9rem;
     outline: none;
 }
 
@@ -134,12 +134,12 @@ a {
 .form button {
     padding: 12px;
     align-self: center;
-    width: 500px;
+    width: 300px;
     border-radius: 10px;
     border: none;
     background-color: #ff1a1a;
     color: #fff;
-    font-size: 1rem;
+    font-size: .8rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -149,6 +149,7 @@ a {
     transform: translateY(-3px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
+
 
 .backHome{
     display: block;

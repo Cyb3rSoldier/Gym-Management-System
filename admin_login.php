@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="design.css">
 </head>
 <body>
-    <div class="form">
+    <div class="form" id="login">
         <h2><b><u>Login Here!</u></b></h2><br>
 
          <!-- Show session messages -->

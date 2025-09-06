@@ -4,34 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Management System</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="design.css">
 </head>
 
 <body>
 
-    <!--NAV BAR SECTION-->
-
-    <nav class="navbar">
-        <!--<a href="#" class="logo"><b><big>OMAR.</big></b></a>-->
-        <ul id="nav-ul">
-            <li class="active"><a href="#home">Home</a></li>
-            <li id="nav-li"><a href="#mem_reg">Member Registration</a></li>
-            <li id="nav-li"><a href="member_login.php">Member Dashboard</a></li>
-            <li id="nav-li"><a href="trainer_login.php">Trainer Dashboard</a></li>
-            <li id="nav-li"><a href="admin_login.php">Admin Dashboard</a></li>
-        </ul>
-    </nav>
-
-    <!--HOME SECTION DESIGN-->
-    <section class="home" id="home">
-        <h2>Gym Management System</h2>
-        <h4>Level Up Your Fitness — In a Smart Way</h4>
-    </section>
-
-    <!--Member Registration Section-->
-    <section class="form" id="mem_reg">
-        <div class="mem_form">
+    <!--Trainer Registration Section-->
+    <section class="form" id="trainer_reg">
+        <div class="trainer_form">
             <h2><u>Register here!</u></h2>
 
             <!-- Show session messages -->
@@ -68,12 +49,10 @@
                 <input type="password" name="Password" placeholder="Enter Password" required><br>
                 <select name="Role" placeholder="Select Your Role" required>
                     <option value="">--Select Role--</option>
-                    <option value="User">Member</option>
-                </select><br><br>
+                    <option value="User">Trainer</option>
+                </select><br>
                 <button type="submit" name="register">Register</button>
             </form>
-            <br>
-            <p align="center">Already have Account? <a href="member_login.php"><u><b> <big>login</big></b></u> </a>here!</p>
         </div>
     </section>
 </body>
