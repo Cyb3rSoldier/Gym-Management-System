@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="form" id="login">
-        <h2><b><u>Login Here!</u></b></h2><br>
+        <h2><b><u>Admin Login!</u></b></h2><br>
 
          <!-- Show session messages -->
         <?php

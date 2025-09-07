@@ -10,6 +10,8 @@
 
 <body>
 
+    <h2 align="center" style="color:antiquewhite;">Welcome to Admin Page!</h2>
+
     <!--Trainer Registration Section-->
     <section class="form" id="trainer_reg">
         <div class="trainer_form">
@@ -55,6 +57,7 @@
             </form>
         </div>
     </section>
+    <a class="backHome" href="admin_logout.php">Logout</a>
 </body>
 
 </html>
