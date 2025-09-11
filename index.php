@@ -47,7 +47,7 @@
 
             ?>
             <br>
-            <form action="" method="post">
+            <form action="member_control.php" method="post">
                 <label>NAME: </label>
                 <input type="text" name="Name" placeholder="Enter Your Full Name" required><br>
                 <label>AGE: </label>
@@ -57,11 +57,11 @@
                 <label>EMAIL: </label>
                 <input type="email" name="Email" placeholder=" Enter Your Email" required><br>
                 <label>ADDRESS</label>
-                <input type="adress" name="Adress" placeholder="Enter your Adress" required><br>
+                <input type="text" name="Address" placeholder="Enter your Adress" required><br>
                 <label>GENDER: </label>
                 <div class="gender">
-                    <input type="radio" value="male" name="gender"><label for="male">MALE</label>
-                    <input type="radio" value="female" name="gender"><label for="female">FEMALE</label>
+                    <input type="radio" value="male" name="Gender"><label for="male">MALE</label>
+                    <input type="radio" value="female" name="Gender"><label for="female">FEMALE</label>
                 </div>
                 <br>
                 <label>PASSWORD: </label>

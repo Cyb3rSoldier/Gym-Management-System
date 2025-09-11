@@ -28,7 +28,7 @@
 
             ?>
             <br>
-            <form action="" method="post">
+            <form action="member_control.php" method="post">
                 <label>NAME: </label>
                 <input type="text" name="Name" placeholder="Enter Your Full Name" required><br>
                 <label>AGE: </label>
