@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,11 +41,11 @@
             <!-- Show session messages -->
             <?php
             if (isset($_SESSION['register_error'])) {
-                echo "<p align='center' style='color: red; font-weight: bold;'>" . $_SESSION['register_error'] . "</p>";
+                echo "<p align='center' style='color: darksalmon; font-weight: bold;'>" . $_SESSION['register_error'] . "</p>";
                 unset($_SESSION['register_error']); // clear message after showing
             }
             if (isset($_SESSION['register_success'])) {
-                echo "<p align='center' style='color: green; font-weight: bold;'>" . $_SESSION['register_success'] . "</p>";
+                echo "<p align='center' style='color: darksalmon; font-weight: bold;'>" . $_SESSION['register_success'] . "</p>";
                 unset($_SESSION['register_success']);
             }
 
@@ -68,7 +72,7 @@
                 <input type="password" name="Password" placeholder="Enter Password" required><br>
                 <select name="Role" placeholder="Select Your Role" required>
                     <option value="">--Select Role--</option>
-                    <option value="User">Member</option>
+                    <option value="Member">Member</option>
                 </select><br><br>
                 <button type="submit" name="register">Register</button>
             </form>

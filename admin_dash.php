@@ -51,7 +51,7 @@
                 <input type="password" name="Password" placeholder="Enter Password" required><br>
                 <select name="Role" placeholder="Select Your Role" required>
                     <option value="">--Select Role--</option>
-                    <option value="User">Trainer</option>
+                    <option value="Trainer">Trainer</option>
                 </select><br>
                 <button type="submit" name="register">Register</button>
             </form>

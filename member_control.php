@@ -31,7 +31,7 @@ if (isset($_POST['register'])) {
         $_SESSION['active_form'] = "login";
     }
 
-    header("Location: member_reg.php");
+    header("Location: index.php#mem_reg");
     exit();
 }
 
@@ -40,7 +40,7 @@ if (isset($_POST['login'])) {
     $email = $_POST['Email'];
     $password = $_POST['Password'];
 
-    $stmt = $conn->prepare("SELECT * FROM users WHERE Email = ?");
+    $stmt = $conn->prepare("SELECT * FROM member_registration WHERE Email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -53,11 +53,16 @@ if (isset($_POST['login'])) {
             $_SESSION['Role']  = $row['Role'];
 
             // redirect by role
-            if ($row['Role'] === 'Admin') {
-                header("Location: Admin_Page.php");
+            if ($row['Role'] === 'member') {
+                header("Location: member_dash.php");
                 exit();
-            } else {
-                header("Location: User_Page.php");
+            }
+            else if ($row['Role'] === 'admin') {
+                header("Location: admin_dash.php");
+                exit();
+            }
+            else if ($row['Role'] === 'trainer') {
+                header("Location: trainer_dash.php");
                 exit();
             }
         }
@@ -66,7 +71,7 @@ if (isset($_POST['login'])) {
     // login failed
     $_SESSION['login_error'] = 'Incorrect email or password';
     $_SESSION['active_form'] = "login";
-    header("Location: login.php");
+    header("Location: member_login.php");
     exit();
 }
 ?>
