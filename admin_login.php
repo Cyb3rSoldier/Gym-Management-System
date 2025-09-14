@@ -15,13 +15,13 @@
          <!-- Show session messages -->
         <?php
         if (isset($_SESSION['login_error'])) {
-            echo "<p align='center' style='color: red; font-weight: bold;'>" . $_SESSION['login_error'] . "</p>";
+            echo "<p align='center' style='color: darksalmon; font-weight: bold;'>" . $_SESSION['login_error'] . "</p>";
             unset($_SESSION['login_error']); // clear message after showing
         }
 
         ?>
         <br>
-        <form action="" method="post">
+        <form action="admin_control.php" method="post">
             <input type="Email" name="Email" placeholder="Email" required><br><br>
             <input type="Password" name="Password" placeholder="Password" required><br><br>
             <button type="submit" name="login">login</button>

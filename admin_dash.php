@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// Protect page: check if logged in
+if (!isset($_SESSION['Email']) || $_SESSION['Role'] !== 'admin') {
+    header("Location: admin_login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +40,7 @@
 
             ?>
             <br>
-            <form action="" method="post">
+            <form action="trainer_control.php" method="post">
                 <label>NAME: </label>
                 <input type="text" name="Name" placeholder="Enter Your Full Name" required><br>
                 <label>AGE: </label>
