@@ -20,6 +20,9 @@ if (!isset($_SESSION['Email']) || $_SESSION['Role'] !== 'admin') {
 
 <body>
 
+    <h2 align="center" style="color:antiquewhite;">
+        Hello, <?php echo htmlspecialchars($_SESSION['Name']); ?>!
+    </h2>
     <h2 align="center" style="color:antiquewhite;">Welcome to Admin Page!</h2>
 
     <!--Trainer Registration Section-->
