@@ -17,7 +17,7 @@ session_start();
     <!--NAV BAR SECTION-->
 
     <nav class="navbar">
-        <!--<a href="#" class="logo"><b><big>OMAR.</big></b></a>-->
+        <a href="index.php" class="logo"><img src="logo.jpg" alt="Logo"></a>
         <ul id="nav-ul">
             <li class="active"><a href="#home">Home</a></li>
             <li id="nav-li"><a href="#mem_reg">Member Registration</a></li>
