@@ -2,10 +2,10 @@
 
 //this php fie is for database( gym-management-system ) connection!
 
-$host = "localhost";
-$user = "root";
-$password = "";
-$database = "gym-management-system";
+$host = "sql305.infinityfree.com";
+$user = "if0_40168992";
+$password = "Ofr243274ok";
+$database = "if0_40168992_gym_management_system";
 
 $conn = new mysqli($host, $user, $password, $database);
 
