@@ -22,7 +22,7 @@
             <li id="nav-li"><a href="admin_login.php">Admin Dashboard</a></li>
         </ul>
     </nav>
-    <div class="form">
+    <div class="form" id="login">
         <h2><b><u>Trainer Login!</u></b></h2><br>
 
          <!-- Show session messages -->
@@ -34,7 +34,7 @@
 
         ?>
         <br>
-        <form action="" method="post">
+        <form action="trainer_control.php" method="post">
             <input type="Email" name="Email" placeholder="Email" required><br><br>
             <input type="Password" name="Password" placeholder="Password" required><br><br>
             <button type="submit" name="login">login</button>

@@ -14,7 +14,7 @@ if (isset($_POST['register'])) {
     $role = $_POST['Role'];
 
     // Check if email exists
-    $stmt = $conn->prepare("SELECT Email FROM member_registration WHERE Email = ?");
+    $stmt = $conn->prepare("SELECT Email FROM trainer_registration WHERE Email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -23,7 +23,7 @@ if (isset($_POST['register'])) {
         $_SESSION['register_error'] = "Email already exists! Please login.";
         $_SESSION['active_form'] = "register";
     } else {
-        $stmt = $conn->prepare("INSERT INTO member_registration (Name, Age, Contact, Email, Address, Gender,  Password, Role) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO trainer_registration (Name, Age, Contact, Email, Address, Gender,  Password, Role) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("sissssss", $name, $age, $contact, $email, $address, $gender, $password, $role);
         $stmt->execute();
 
@@ -31,7 +31,7 @@ if (isset($_POST['register'])) {
         $_SESSION['active_form'] = "login";
     }
 
-    header("Location: index.php#mem_reg");
+    header("Location: admin_dash.php#trainer_reg");
     exit();
 }
 
@@ -40,7 +40,7 @@ if (isset($_POST['login'])) {
     $email = $_POST['Email'];
     $password = $_POST['Password'];
 
-    $stmt = $conn->prepare("SELECT * FROM member_registration WHERE Email = ?");
+    $stmt = $conn->prepare("SELECT * FROM trainer_registration WHERE Email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -71,7 +71,7 @@ if (isset($_POST['login'])) {
     // login failed
     $_SESSION['login_error'] = 'Incorrect email or password';
     $_SESSION['active_form'] = "login";
-    header("Location: member_login.php");
+    header("Location: trainer_login.php");
     exit();
 }
 ?>

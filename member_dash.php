@@ -27,18 +27,17 @@ if (!isset($_SESSION['Email']) || $_SESSION['Role'] !== 'member') {
     <nav class="navbar">
         <a href="index.php" class="logo"><img src="logo.jpg" alt="Logo"></a>
         <ul id="nav-ul">
-            <li class="active"><a href="#home">Home</a></li>
-            <li id="nav-li"><a href="#mem_reg">Member Registration</a></li>
+            <li class="active"><a href="index.php">Home</a></li>
             <li id="nav-li"><a href="member_login.php">Member Dashboard</a></li>
-            <li id="nav-li"><a href="trainer_login.php">Trainer Dashboard</a></li>
-            <li id="nav-li"><a href="admin_login.php">Admin Dashboard</a></li>
+            <li id="nav-li"><a href="member_logout.php">Logout</a></li>
         </ul>
     </nav>
+    <section class="home">
     <h2 align="center" style="color:antiquewhite;">
         Hello, <?php echo htmlspecialchars($_SESSION['Name']); ?>!
     </h2>
     <h2 align="center" style="color:antiquewhite;">Welcome to Member Page!</h2>
-    <a class="backHome" href="member_logout.php">Logout</a>
+    </section>
 
      <!--FOOTER SECTION-->
 

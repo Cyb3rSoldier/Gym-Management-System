@@ -26,23 +26,23 @@ if (!isset($_SESSION['Email']) || $_SESSION['Role'] !== 'admin') {
     <nav class="navbar">
         <a href="index.php" class="logo"><img src="logo.jpg" alt="Logo"></a>
         <ul id="nav-ul">
-            <li class="active"><a href="#home">Home</a></li>
-            <li id="nav-li"><a href="#mem_reg">Member Registration</a></li>
-            <li id="nav-li"><a href="member_login.php">Member Dashboard</a></li>
-            <li id="nav-li"><a href="trainer_login.php">Trainer Dashboard</a></li>
-            <li id="nav-li"><a href="admin_login.php">Admin Dashboard</a></li>
+            <li class="active"><a href="index.php">Home</a></li>
+            <li id="nav-li"><a href="admin_dash.php">Admin Dashboard</a></li>
+            <li id="nav-li"><a href="admin_logout.php">Logout</a></li>
         </ul>
     </nav>
 
-    <h2 align="center" style="color:antiquewhite;">
-        Hello, <?php echo htmlspecialchars($_SESSION['Name']); ?>!
-    </h2>
-    <h2 align="center" style="color:antiquewhite;">Welcome to Admin Page!</h2>
+    <section class="home">
+        <h2 align="center" style="color:antiquewhite;">
+            Hello, <?php echo htmlspecialchars($_SESSION['Name']); ?>!
+        </h2>
+        <h2 align="center" style="color:antiquewhite;">Welcome to Admin Page!</h2>
+    </section>
 
     <!--Trainer Registration Section-->
     <section class="form" id="trainer_reg">
         <div class="trainer_form">
-            <h2><u>Register here!</u></h2>
+            <h2><u>Add Trainer Here!</u></h2>
 
             <!-- Show session messages -->
             <?php
@@ -67,11 +67,11 @@ if (!isset($_SESSION['Email']) || $_SESSION['Role'] !== 'admin') {
                 <label>EMAIL: </label>
                 <input type="email" name="Email" placeholder=" Enter Your Email" required><br>
                 <label>ADDRESS</label>
-                <input type="adress" name="Adress" placeholder="Enter your Adress" required><br>
+                <input type="address" name="Address" placeholder="Enter your Adress" required><br>
                 <label>GENDER: </label>
                 <div class="gender">
-                    <input type="radio" value="male" name="gender"><label for="male">MALE</label>
-                    <input type="radio" value="female" name="gender"><label for="female">FEMALE</label>
+                    <input type="radio" value="male" name="Gender"><label for="male">MALE</label>
+                    <input type="radio" value="female" name="Gender"><label for="female">FEMALE</label>
                 </div>
                 <br>
                 <label>PASSWORD: </label>
@@ -84,9 +84,8 @@ if (!isset($_SESSION['Email']) || $_SESSION['Role'] !== 'admin') {
             </form>
         </div>
     </section>
-    <a class="backHome" href="admin_logout.php">Logout</a>
 
-     <!--FOOTER SECTION-->
+    <!--FOOTER SECTION-->
 
     <footer class="footer">
         <div class="footer-container">

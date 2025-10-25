@@ -82,11 +82,28 @@ a {
 }
 
 /*MEMBER REGISTRATION FORM*/
+/*TRAINER REGISTRATION FORM*/
+
+
+.form {
+    padding: 40px 50px;
+    background: linear-gradient(135deg, #302b63, #da0037);
+    margin: 5vh auto;
+    margin-bottom: 10vh !important;
+    border-radius: 20px;
+    width: 500px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /*MEMBER LOGIN FORM*/
 /*TRAINER LOGIN FORM*/
 /*ADMIN LOGIN FORM*/
 
-.form {
+#login{
     padding: 40px 50px;
     background: linear-gradient(135deg, #302b63, #da0037);
     margin: 5vh auto;
@@ -99,6 +116,7 @@ a {
     flex-direction: column;
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .form h2 {
@@ -162,7 +180,6 @@ a {
     transform: translateY(-3px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
-
 
 .backHome {
     display: block;
