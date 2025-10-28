@@ -140,7 +140,7 @@ if (!isset($_SESSION['Email']) || $_SESSION['Role'] !== 'admin') {
         </div>
 
         <div class="footer-bottom">
-            <p>© 2025 Electroza. All Rights Reserved. | <a href="#" style="color: burlywood;">Privacy Policy</a> | <a href="#" style="color: burlywood;">Terms & Conditions</a></p>
+            <p>© 2025 Gym Management System. All Rights Reserved. | <a href="#" style="color: burlywood;">Privacy Policy</a> | <a href="#" style="color: burlywood;">Terms & Conditions</a></p>
         </div>
     </footer>
 </body>

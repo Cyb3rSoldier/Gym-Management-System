@@ -32,15 +32,28 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #16213e, #0f1419);
-    z-index: 100 !important;
+    background: transparent;
+    z-index: 100;
+    transition: all 0.5s ease;
 }
 
+
+.navbar.scrolled {
+    background: linear-gradient(135deg, #16213e, #0f1419);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    height: 100px;
+    padding: 15px 9%;
+}
 
 .navbar img {
     height: 80px;
     width: auto;
     border-radius: 40%;
+    transition: all 0.5s ease;
+}
+
+.navbar.scrolled img {
+    height: 60px;
 }
 
 
@@ -65,20 +78,138 @@ a {
 /*HOME SECTION*/
 
 .home {
-    margin-top: 130px;
+    margin-top: 0; /* Changed from 130px to 0 */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('gym.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animated overlay effect */
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(218, 0, 55, 0.3), transparent);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
 }
 
 .home h2 {
-    color: antiquewhite;
+    color: #fff;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     line-height: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8),
+                 0 0 20px rgba(218, 0, 55, 0.5);
+    animation: fadeInDown 1s ease-in-out;
+    z-index: 1;
 }
 
 .home h4 {
     color: burlywood;
     text-align: center;
-    font-size: 25px;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    animation: fadeInUp 1.5s ease-in-out;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+/* Add a decorative element */
+.home h4::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #da0037, transparent);
+    margin: 20px auto 0;
+    animation: expandWidth 2s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes expandWidth {
+    0%, 100% {
+        width: 100px;
+    }
+    50% {
+        width: 200px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home {
+        height: 400px;
+    }
+    
+    .home h2 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    
+    .home h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        height: 350px;
+    }
+    
+    .home h2 {
+        font-size: 32px;
+        line-height: 50px;
+        letter-spacing: 2px;
+    }
+    
+    .home h4 {
+        font-size: 16px;
+    }
 }
 
 /*MEMBER REGISTRATION FORM*/
@@ -103,11 +234,11 @@ a {
 /*TRAINER LOGIN FORM*/
 /*ADMIN LOGIN FORM*/
 
-#login{
+#login {
     padding: 40px 50px;
     background: linear-gradient(135deg, #302b63, #da0037);
     margin: 5vh auto;
-    margin-top: 200px !important; 
+    margin-top: 200px !important;
     margin-bottom: 10vh !important;
     border-radius: 20px;
     width: 500px;

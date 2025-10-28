@@ -17,7 +17,7 @@ session_start();
 
     <!--NAV BAR SECTION-->
 
-    <nav class="navbar">
+    <nav class="navbar" id= "navbar">
         <a href="index.php" class="logo"><img src="logo.jpg" alt="Logo"></a>
         <ul id="nav-ul">
             <li class="active"><a href="#home">Home</a></li>
@@ -137,9 +137,22 @@ session_start();
         </div>
 
         <div class="footer-bottom">
-            <p>© 2025 Electroza. All Rights Reserved. | <a href="#" style="color: burlywood;">Privacy Policy</a> | <a href="#" style="color: burlywood;">Terms & Conditions</a></p>
+            <p>© 2025 Gym Management System. All Rights Reserved. | <a href="#" style="color: burlywood;">Privacy Policy</a> | <a href="#" style="color: burlywood;">Terms & Conditions</a></p>
         </div>
     </footer>
+
+    <!-- NAVBAR SCROLL EFFECT SCRIPT -->
+    <script>
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 
 </body>
 
