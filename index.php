@@ -89,51 +89,51 @@ session_start();
 
         <div class="slider-container">
             <div class="slide active">
-                <img src="perosnal.jpeg" alt="Personal Training">
                 <div class="service-text">
                     <h3>Personal Training</h3>
                     <p>One-on-one customized workout sessions with certified trainers.</p>
                 </div>
+                <img src="perosnal.jpeg" alt="Personal Training">
             </div>
 
             <div class="slide">
-                <img src="group.jpeg" alt="Group Fitness Classes">
                 <div class="service-text">
                     <h3>Group Fitness Classes</h3>
                     <p>High-energy classes like Yoga, Zumba, HIIT, and Spin.</p>
                 </div>
+                <img src="group.jpeg" alt="Group Fitness Classes">
             </div>
 
             <div class="slide">
-                <img src="strength.jpeg" alt="Strength Training">
                 <div class="service-text">
                     <h3>Strength Training</h3>
                     <p>Build muscle and increase power with guided weightlifting programs.</p>
                 </div>
+                <img src="strength.jpeg" alt="Strength Training">
             </div>
 
             <div class="slide">
-                <img src="cardio.jpeg" alt="Cardio Programs">
                 <div class="service-text">
                     <h3>Cardio Programs</h3>
                     <p>Fat-burning cardio workouts for endurance and weight loss.</p>
                 </div>
+                <img src="cardio.jpeg" alt="Cardio Programs">
             </div>
 
             <div class="slide">
-                <img src="weight.jpeg" alt="Weight Lifting Programs">
                 <div class="service-text">
                     <h3>Weight Lifting</h3>
                     <p>Build muscle and increase strength with expert-guided weight training programs.</p>
                 </div>
+                <img src="weight.jpeg" alt="Weight Lifting Programs">
             </div>
 
             <div class="slide">
-                <img src="nutrition.jpeg" alt="Nutrition">
                 <div class="service-text">
                     <h3>Nutrition Consultation</h3>
                     <p> Personalized meal plans and dietary guidance to fuel your fitness journey.</p>
                 </div>
+                <img src="nutrition.jpeg" alt="Nutrition">
             </div>
 
             <div class="arrow left" id="prev">&#10094;</div>
@@ -141,11 +141,75 @@ session_start();
         </div>
     </section>
 
+    <!--GALLARY SECTION-->
+
+    <section class="gallery" id="Gallery">
+        <h2 class="opening">Gym Gallery</h2>
+        <h3 class="second"><span>WHERE PROGRESS HAPPENS</span></h3>
+
+
+        <div class="services-content">
+            <div class="row">
+                <img src="cardioPlace.jpeg" alt="">
+                <h4>Cardio Area</h4>
+            </div>
+            <div class="row">
+                <img src="strenghtPlace.jpeg" alt="">
+                <h4>Strenght Training Area</h4>
+            </div>
+            <div class="row">
+                <img src="zumba.jpeg" alt="">
+                <h4>Zumba Zone</h4>
+            </div>
+            <div class="row">
+                <img src="yoga.jpeg" alt="">
+                <h4>Yoga Zone</h4>
+            </div>
+            <div class="row">
+                <img src="locker.jpeg" alt="">
+                <h4>Locker Room</h4>
+            </div>
+            <div class="row">
+                <img src="steam.jpeg" alt="">
+                <h4>Steam Bath</h4>
+            </div>
+        </div>
+    </section>
+
+    <!--TRAINER SECTION-->
+
+    <section class="trainer" id="trainer">
+        <header>
+            <h1>Meet Our Trainers</h1>
+        </header>
+        <section class="trainer-section">
+            <div class="trainer-card">
+                <img src="omar.jpg" alt="Trainer 1">
+                <h2>Omar Faruk Rakib</h2>
+                <p>Muscle Building Expert</p>
+            </div>
+            <div class="trainer-card">
+                <img src="ib.jpeg" alt="Trainer 2">
+                <h2>Ibtesham Tanjim</h2>
+                <p>Fat Loss Expert</p>
+            </div>
+            <div class="trainer-card">
+                <img src="th.jpeg" alt="Trainer 3">
+                <h2>Tauhid Islam</h2>
+                <p>Strength Coach</p>
+            </div>
+            <div class="trainer-card">
+                <img src="jh.jpeg" alt="Trainer 4">
+                <h2>Jahed Islam</h2>
+                <p>Zumba Specialist</p>
+            </div>
+        </section>
+    </section>
 
     <!--Member Registration Section-->
     <section class="form" id="mem_reg">
         <div class="mem_form">
-            <h2><u>Register here!</u></h2>
+            <h2><u>Member Registration!</u></h2>
 
             <!-- Show session messages -->
             <?php
