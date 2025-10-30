@@ -17,7 +17,7 @@ session_start();
 
     <!--NAV BAR SECTION-->
 
-    <nav class="navbar" id= "navbar">
+    <nav class="navbar" id="navbar">
         <a href="index.php" class="logo"><img src="logo.jpg" alt="Logo"></a>
         <ul id="nav-ul">
             <li class="active"><a href="#home">Home</a></li>
@@ -29,10 +29,118 @@ session_start();
     </nav>
 
     <!--HOME SECTION DESIGN-->
+
     <section class="home" id="home">
         <h2>Gym Management System</h2>
         <h4>Level Up Your Fitness — In a Smart Way</h4>
+        <a href="#membership" class="mem-btn">Explore Plans</a>
     </section>
+
+    <!--MEMBERSHIP SECTION DESING-->
+
+    <section class="membership" id="membership">
+        <header class="mem-header">
+            <h2>Membership Plans</h2>
+            <p>Choose the plan that fits your lifestyle</p>
+        </header>
+        <div class="plans">
+            <div class="basic-plan">
+                <h3>Basic</h3>
+                <p class="price">৳1500/month</p>
+                <ul>
+                    <li>Gym Equipment Access</li>
+                    <li>Locker Room Access</li>
+                    <li>1 Free Fitness Assessment</li>
+                </ul>
+                <a href="#mem_reg" class="btn">Register</a>
+
+            </div>
+
+            <div class="premium-plan">
+                <h3>Premium</h3>
+                <p class="price">৳2500/month</p>
+                <ul>
+                    <li>All Basic Perks</li>
+                    <li>Unlimited Fitness Classes</li>
+                    <li>Personal Training</li>
+                </ul>
+                <a href="#mem_reg" class="btn">Register</a>
+
+            </div>
+
+            <div class="elite-plan">
+                <h3>Elite</h3>
+                <p class="price">৳3500/month</p>
+                <ul>
+                    <li>All Premium Perks</li>
+                    <li>24/7 Access</li>
+                    <li>Nutrition Consultation</li>
+                </ul>
+                <a href="#mem_reg" class="btn">Register</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!--SEVICE SECTION DESIGN-->
+
+    <section class="service-slider" id="Service">
+        <h2 class="service-heading">Our <span>Services</span></h2>
+
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="perosnal.jpeg" alt="Personal Training">
+                <div class="service-text">
+                    <h3>Personal Training</h3>
+                    <p>One-on-one customized workout sessions with certified trainers.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="group.jpeg" alt="Group Fitness Classes">
+                <div class="service-text">
+                    <h3>Group Fitness Classes</h3>
+                    <p>High-energy classes like Yoga, Zumba, HIIT, and Spin.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="strength.jpeg" alt="Strength Training">
+                <div class="service-text">
+                    <h3>Strength Training</h3>
+                    <p>Build muscle and increase power with guided weightlifting programs.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="cardio.jpeg" alt="Cardio Programs">
+                <div class="service-text">
+                    <h3>Cardio Programs</h3>
+                    <p>Fat-burning cardio workouts for endurance and weight loss.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="weight.jpeg" alt="Weight Lifting Programs">
+                <div class="service-text">
+                    <h3>Weight Lifting</h3>
+                    <p>Build muscle and increase strength with expert-guided weight training programs.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="nutrition.jpeg" alt="Nutrition">
+                <div class="service-text">
+                    <h3>Nutrition Consultation</h3>
+                    <p> Personalized meal plans and dietary guidance to fuel your fitness journey.</p>
+                </div>
+            </div>
+
+            <div class="arrow left" id="prev">&#10094;</div>
+            <div class="arrow right" id="next">&#10095;</div>
+        </div>
+    </section>
+
 
     <!--Member Registration Section-->
     <section class="form" id="mem_reg">
@@ -144,7 +252,7 @@ session_start();
     <!-- NAVBAR SCROLL EFFECT SCRIPT -->
     <script>
         const navbar = document.getElementById('navbar');
-        
+
         window.addEventListener('scroll', function() {
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
@@ -152,7 +260,35 @@ session_start();
                 navbar.classList.remove('scrolled');
             }
         });
+        const slides = document.querySelectorAll(".slide");
+        const prev = document.getElementById("prev");
+        const next = document.getElementById("next");
+        let index = 0;
+
+        function showSlide(n) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove("active");
+                if (i === n) slide.classList.add("active");
+            });
+        }
+
+        function nextSlide() {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }
+
+        function prevSlide() {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        }
+
+        next.addEventListener("click", nextSlide);
+        prev.addEventListener("click", prevSlide);
+
+        // Auto-slide every 5 seconds
+        setInterval(nextSlide, 5000);
     </script>
+
 
 </body>
 
