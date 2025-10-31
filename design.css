@@ -135,7 +135,6 @@ a {
     overflow: hidden;
 }
 
-/* Animated overlay effect */
 .home::before {
     content: '';
     position: absolute;
@@ -186,7 +185,6 @@ a {
     padding: 0 20px;
 }
 
-/* Decorative element */
 .home h4::after {
     content: '';
     display: block;
@@ -199,7 +197,6 @@ a {
     box-shadow: 0 0 10px rgba(218, 0, 55, 0.6);
 }
 
-/* Animations */
 @keyframes fadeInDown {
     0% {
         opacity: 0;
@@ -252,75 +249,6 @@ a {
     overflow: hidden;
     z-index: 1;
     border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .home {
-        height: 80vh;
-    }
-
-    .home h2 {
-        font-size: 40px;
-        letter-spacing: 2px;
-    }
-
-    .home h4 {
-        font-size: 20px;
-        letter-spacing: 1px;
-    }
-
-    .navbar #nav-ul {
-        gap: 5px;
-    }
-
-    .navbar #nav-ul li a {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar {
-        padding: 15px 3%;
-        height: 100px;
-    }
-
-    .navbar.scrolled {
-        height: 80px;
-        padding: 10px 3%;
-    }
-
-    .navbar img {
-        height: 60px;
-    }
-
-    .navbar.scrolled img {
-        height: 45px;
-    }
-
-    .navbar #nav-ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .navbar #nav-ul li a {
-        padding: 6px 10px;
-        font-size: 12px;
-    }
-
-    .home {
-        height: 70vh;
-    }
-
-    .home h2 {
-        font-size: 28px;
-        line-height: 1.3;
-    }
-
-    .home h4 {
-        font-size: 16px;
-    }
 }
 
 /*========== MEMBERSHIP SECTION ==========*/
@@ -504,78 +432,6 @@ a {
     transform: translateY(-1px) scale(1.02);
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .plans {
-        gap: 30px;
-    }
-
-    .premium-plan {
-        transform: scale(1);
-    }
-}
-
-@media (max-width: 768px) {
-    .membership {
-        padding: 80px 5%;
-    }
-
-    .mem-header {
-        margin-bottom: 50px;
-    }
-
-    .plans {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-    }
-
-    .basic-plan,
-    .premium-plan,
-    .elite-plan {
-        padding: 40px 30px;
-    }
-
-    .premium-plan {
-        transform: scale(1);
-        order: -1;
-    }
-}
-
-@media (max-width: 480px) {
-    .membership {
-        padding: 60px 3%;
-    }
-
-    .mem-header h2 {
-        font-size: 28px;
-    }
-
-    .mem-header p {
-        font-size: 14px;
-    }
-
-    .basic-plan h3,
-    .premium-plan h3,
-    .elite-plan h3 {
-        font-size: 26px;
-    }
-
-    .price {
-        font-size: 34px;
-    }
-
-    .basic-plan ul li,
-    .premium-plan ul li,
-    .elite-plan ul li {
-        font-size: 14px;
-    }
-
-    .plans .btn {
-        padding: 12px 35px;
-        font-size: 14px;
-    }
-}
-
 /*========== SERVICE SLIDER SECTION ==========*/
 
 .service-slider {
@@ -684,21 +540,6 @@ a {
     }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .slide img {
-        height: 250px;
-    }
-
-    .service-text h3 {
-        font-size: 22px;
-    }
-
-    .service-text p {
-        font-size: 15px;
-    }
-}
-
 /*========== GALLERY SECTION ==========*/
 
 .gallery {
@@ -797,72 +638,6 @@ a {
 .services-content .row:hover h4 {
     color: #fff;
 }
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .services-content {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    .gallery {
-        padding: 80px 5%;
-    }
-
-    .gallery .opening {
-        font-size: 35px;
-    }
-
-    .gallery .second {
-        font-size: 18px;
-        margin-bottom: 40px;
-    }
-
-    .services-content {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 25px;
-    }
-
-    .services-content .row img {
-        height: 220px;
-    }
-
-    .services-content .row h4 {
-        font-size: 18px;
-        padding: 20px 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery {
-        padding: 60px 3%;
-    }
-
-    .gallery .opening {
-        font-size: 28px;
-    }
-
-    .gallery .second {
-        font-size: 16px;
-    }
-
-    .services-content {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .services-content .row img {
-        height: 200px;
-    }
-
-    .services-content .row h4 {
-        font-size: 16px;
-        padding: 18px 12px;
-    }
-}
-
 
 /*========== TRAINER SECTION ==========*/
 
@@ -979,7 +754,6 @@ a {
     font-weight: 00;
 }
 
-/* Badge/Label effect */
 .trainer-card h2::after {
     content: '';
     position: absolute;
@@ -997,75 +771,7 @@ a {
     width: 80%;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .trainer-section {
-        gap: 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    .trainer {
-        padding: 60px 5%;
-    }
-
-    .trainer header h1 {
-        font-size: 36px;
-    }
-
-    .trainer-section {
-        gap: 25px;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }
-
-    .trainer-card {
-        padding: 35px 25px 30px;
-    }
-
-    .trainer-card img {
-        max-width: 180px;
-        height: 180px;
-    }
-
-    .trainer-card h2 {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .trainer {
-        padding: 50px 3%;
-    }
-
-    .trainer header h1 {
-        font-size: 28px;
-        letter-spacing: 2px;
-    }
-
-    .trainer-section {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .trainer-card {
-        padding: 30px 20px 25px;
-    }
-
-    .trainer-card img {
-        max-width: 170px;
-        height: 170px;
-    }
-
-    .trainer-card h2 {
-        font-size: 19px;
-    }
-
-    .trainer-card p {
-        font-size: 14px;
-    }
-}
-
-
+/*========== FORM DESIGN ==========*/
 
 /*MEMBER REGISTRATION FORM*/
 /*TRAINER REGISTRATION FORM*/
@@ -1173,7 +879,7 @@ a {
     font-weight: 900;
 }
 
-/* FOOTER SECTION */
+/*========== FOOTER SECTION ==========*/
 
 .footer {
     background: linear-gradient(135deg, #16213e, #0f1419);
@@ -1241,7 +947,6 @@ a {
     transform: translateX(5px);
 }
 
-/* Social Links Styling */
 .social-links {
     display: flex;
     flex-wrap: wrap;
@@ -1287,6 +992,8 @@ a {
     color: #fff;
     text-decoration: underline;
 }
+
+/*========== RESPONSIVE DESIGN ==========*/
 
 /* Responsive Footer */
 @media (max-width: 768px) {
