@@ -24,6 +24,7 @@
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="index.php#mem_reg">Member Registration</a></li>
+                    <li id="nav-li"><a href="index.php#service">About Us</a></li>
                     <li><a href="member_login.php">Member Login</a></li>
                     <li><a href="trainer_login.php">Trainer Login</a></li>
                     <li><a href="admin_login.php">Admin Login</a></li>

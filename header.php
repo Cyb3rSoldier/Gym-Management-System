@@ -14,6 +14,7 @@
         <ul id="nav-ul">
             <li class="active"><a href="index.php#home">Home</a></li>
             <li id="nav-li"><a href="index.php#mem_reg">Member Registration</a></li>
+            <li id="nav-li"><a href="index.php#service">About Us</a></li>
             <li id="nav-li"><a href="member_login.php">Member Dashboard</a></li>
             <li id="nav-li"><a href="trainer_login.php">Trainer Dashboard</a></li>
             <li id="nav-li"><a href="admin_login.php">Admin Dashboard</a></li>

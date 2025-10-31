@@ -74,7 +74,7 @@ session_start();
 
     <!--SEVICE SECTION DESIGN-->
 
-    <section class="service-slider" id="Service">
+    <section class="service-slider" id="service">
         <h2 class="service-heading">Our <span>Services</span></h2>
 
         <div class="slider-container">
@@ -133,7 +133,7 @@ session_start();
 
     <!--GALLARY SECTION-->
 
-    <section class="gallery" id="Gallery">
+    <section class="gallery" id="gallery">
         <h2 class="opening">Gym Gallery</h2>
         <h3 class="second"><span>WHERE PROGRESS HAPPENS</span></h3>
 
