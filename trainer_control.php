@@ -27,7 +27,7 @@ if (isset($_POST['register'])) {
         $stmt->bind_param("sissssss", $name, $age, $contact, $email, $address, $gender, $password, $role);
         $stmt->execute();
 
-        $_SESSION['register_success'] = "You have registered successfully! Please login now.";
+        $_SESSION['register_success'] = "New Trainer Added Successfully!";
         $_SESSION['active_form'] = "login";
     }
 

@@ -4,30 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trainer Dashboard</title>
+    <title>Document</title>
     <link rel="stylesheet" href="design.css">
-    <link rel="website icon" type="jpg" href="logo.jpg">
 </head>
 
 <body>
-    <!--NAV BAR SECTION-->
-
     <nav class="navbar" id="navbar">
         <a href="index.php" class="logo"><img src="logo.jpg" alt="Logo"></a>
         <ul id="nav-ul">
-            <li class="active"><a href="index.php">Home</a></li>
-            <li id="nav-li"><a href="trainer_dash.php">Trainer Dashboard</a></li>
-            <li id="nav-li"><a href="trainer_logout.php">Logout</a></li>
+            <li class="active"><a href="index.php#home">Home</a></li>
+            <li id="nav-li"><a href="index.php#mem_reg">Member Registration</a></li>
+            <li id="nav-li"><a href="member_login.php">Member Dashboard</a></li>
+            <li id="nav-li"><a href="trainer_login.php">Trainer Dashboard</a></li>
+            <li id="nav-li"><a href="admin_login.php">Admin Dashboard</a></li>
         </ul>
     </nav>
-    <section class="home">
-    <h2 align="center" style="color:antiquewhite;">Welcome to Trainer Page!</h2>
-    </section>
 
-    <!-- FOOTER -->
-    <?php include 'footer.php' ?>
-
-     <!-- NAVBAR SCROLL EFFECT SCRIPT -->
+    <!-- NAVBAR SCROLL EFFECT SCRIPT -->
     <script>
         const navbar = document.getElementById('navbar');
 
@@ -39,7 +32,7 @@
             }
         });
     </script>
-    
+
 </body>
 
 </html>
