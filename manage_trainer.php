@@ -29,6 +29,8 @@ if (!isset($_SESSION['Email']) || $_SESSION['Role'] !== 'admin') {
         <ul id="nav-ul">
             <li class="active"><a href="index.php">Home</a></li>
             <li id="nav-li"><a href="admin_dash.php">Admin Dashboard</a></li>
+            <li id="nav-li"><a href="manage_member.php">Member INFO</a></li>
+            <li id="nav-li"><a href="manage_trainer.php">Trainer INFO</a></li>
             <li id="nav-li"><a href="admin_logout.php">Logout</a></li>
         </ul>
     </nav>
@@ -83,6 +85,7 @@ if (!isset($_SESSION['Email']) || $_SESSION['Role'] !== 'admin') {
     </section>
 
     <section class="table">
+        <h1>Trainer INFO</h1>
         <table border="1">
             <thead>
                 <tr>

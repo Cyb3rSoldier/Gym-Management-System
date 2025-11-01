@@ -28,6 +28,8 @@ if (!isset($_SESSION['Email']) || $_SESSION['Role'] !== 'admin') {
         <ul id="nav-ul">
             <li class="active"><a href="index.php">Home</a></li>
             <li id="nav-li"><a href="admin_dash.php">Admin Dashboard</a></li>
+            <li id="nav-li"><a href="manage_member.php">Member INFO</a></li>
+            <li id="nav-li"><a href="manage_trainer.php">Trainer INFO</a></li>
             <li id="nav-li"><a href="admin_logout.php">Logout</a></li>
         </ul>
     </nav>
@@ -39,7 +41,7 @@ if (!isset($_SESSION['Email']) || $_SESSION['Role'] !== 'admin') {
         <h2 align="center" style="color:antiquewhite;">Welcome to Admin Page!</h2>
     </section>
 
-    <section class="backHome">
+    <section class="control">
         <a href="manage_member.php">Manage Members</a><br>
         <a href="manage_trainer.php">Manage Trainers</a><br>
     </section>

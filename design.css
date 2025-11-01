@@ -75,7 +75,7 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 10px;
+    gap: 5px;
 }
 
 .navbar #nav-ul li {
@@ -87,7 +87,7 @@ a {
     display: block;
     padding: 10px 20px;
     color: antiquewhite;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -781,7 +781,8 @@ a {
     padding: 40px 50px;
     background: linear-gradient(135deg, #302b63, #da0037);
     margin: 5vh auto;
-    margin-bottom: 10vh !important;
+    margin-top: 220px;
+    margin-bottom: 2vh !important;
     border-radius: 20px;
     width: 700px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
@@ -994,10 +995,149 @@ a {
 }
 
 /*========== MANAGE MEMBER SECTION ==========*/
+/*========== MANAGE TRAINER SECTION ==========*/
 
-.table{
-    margin-top: 200px;
+.table {
+    margin-top: 100px;
+    padding: 50px 9%;
+    margin-bottom: 80px;
 }
+
+.table h1 {
+    color: burlywood;
+    font-size: 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.table h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #da0037, transparent);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(218, 0, 55, 0.6);
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(20, 20, 40, 0.6);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.table table thead {
+    background: linear-gradient(135deg, #302b63, #da0037);
+}
+
+.table table thead tr th {
+    padding: 20px 15px;
+    text-align: left;
+    color: burlywood;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.table table tbody tr {
+    background: rgba(30, 30, 50, 0.4);
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.table table tbody tr:hover {
+    background: rgba(218, 0, 55, 0.15);
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(218, 0, 55, 0.2);
+}
+
+.table table tbody tr td {
+    padding: 18px 15px;
+    color: #ddd;
+    font-size: 13px;
+    border: none;
+    vertical-align: middle;
+}
+
+.table table tbody tr:last-child {
+    border-bottom: none;
+}
+
+/*========== CONTROL SECTION (MANAGE BUTTONS) ==========*/
+
+.control {
+    margin-top: 50px;
+    padding: 60px 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.control a {
+    display: inline-block;
+    padding: 18px 50px;
+    background: linear-gradient(135deg, #302b63, #da0037);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(218, 0, 55, 0.4);
+    position: relative;
+    overflow: hidden;
+    min-width: 350px;
+    text-align: center;
+    border: 2px solid rgba(222, 184, 135, 0.3);
+}
+
+.control a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.control a:hover::before {
+    left: 100%;
+}
+
+.control a:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(218, 0, 55, 0.6);
+    background: linear-gradient(135deg, #da0037, #302b63);
+    border-color: burlywood;
+    color: burlywood;
+}
+
+.control a:active {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(218, 0, 55, 0.5);
+}
+
 
 /*========== RESPONSIVE DESIGN ==========*/
 
@@ -1052,5 +1192,101 @@ a {
     .footer-bottom {
         font-size: 0.8rem;
         padding: 15px 10px;
+    }
+}
+
+/* Responsive Design for Table */
+@media (max-width: 992px) {
+    .table {
+        margin-top: 150px;
+        padding: 40px 5%;
+    }
+
+    .table h1 {
+        font-size: 36px;
+    }
+
+    .table table {
+        font-size: 14px;
+    }
+
+    .table table thead tr th,
+    .table table tbody tr td {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .table {
+        margin-top: 130px;
+        padding: 30px 3%;
+    }
+
+    .table h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .table h1::after {
+        width: 150px;
+    }
+
+    /* Make table scrollable on mobile */
+    .table {
+        overflow-x: auto;
+    }
+
+    .table table {
+        min-width: 800px;
+        border-radius: 10px;
+    }
+
+    .table table thead tr th,
+    .table table tbody tr td {
+        padding: 12px 8px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .table h1 {
+        font-size: 24px;
+    }
+
+    .table table thead tr th,
+    .table table tbody tr td {
+        padding: 10px 6px;
+        font-size: 12px;
+    }
+}
+
+/* Responsive Design for control button*/
+@media (max-width: 768px) {
+    .control {
+        margin-top: 150px;
+        padding: 50px 5%;
+        gap: 25px;
+    }
+
+    .control a {
+        padding: 15px 40px;
+        font-size: 16px;
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .control {
+        margin-top: 130px;
+        padding: 40px 5%;
+        gap: 20px;
+    }
+
+    .control a {
+        padding: 14px 30px;
+        font-size: 14px;
+        min-width: 250px;
+        letter-spacing: 1px;
     }
 }

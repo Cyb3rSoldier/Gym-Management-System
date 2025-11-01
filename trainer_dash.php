@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// Protect page: check if logged in
+if (!isset($_SESSION['Email']) || $_SESSION['Role'] !== 'trainer') {
+    header("Location: trainer_login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
