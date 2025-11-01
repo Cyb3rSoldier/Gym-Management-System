@@ -31,7 +31,7 @@ if (isset($_POST['register'])) {
         $_SESSION['active_form'] = "login";
     }
 
-    header("Location: admin_dash.php#trainer_reg");
+    header("Location: manage_trainer.php#trainer_reg");
     exit();
 }
 

@@ -39,51 +39,11 @@ if (!isset($_SESSION['Email']) || $_SESSION['Role'] !== 'admin') {
         <h2 align="center" style="color:antiquewhite;">Welcome to Admin Page!</h2>
     </section>
 
-    <!--Trainer Registration Section-->
-    <section class="form" id="trainer_reg">
-        <div class="trainer_form">
-            <h2><u>Add Trainer Here!</u></h2>
-
-            <!-- Show session messages -->
-            <?php
-            if (isset($_SESSION['register_error'])) {
-                echo "<p align='center' style='color: red; font-weight: bold;'>" . $_SESSION['register_error'] . "</p>";
-                unset($_SESSION['register_error']); // clear message after showing
-            }
-            if (isset($_SESSION['register_success'])) {
-                echo "<p align='center' style='color: green; font-weight: bold;'>" . $_SESSION['register_success'] . "</p>";
-                unset($_SESSION['register_success']);
-            }
-
-            ?>
-            <br>
-            <form action="trainer_control.php" method="post">
-                <label>NAME: </label>
-                <input type="text" name="Name" placeholder="Enter Your Full Name" required><br>
-                <label>AGE: </label>
-                <input type="number" name="Age" placeholder="Enter Your Age" required><br>
-                <label>Contact: </label>
-                <input type="number" name="Contact" placeholder="Enter Your Contact Number" required><br>
-                <label>EMAIL: </label>
-                <input type="email" name="Email" placeholder=" Enter Your Email" required><br>
-                <label>ADDRESS</label>
-                <input type="address" name="Address" placeholder="Enter your Adress" required><br>
-                <label>GENDER: </label>
-                <div class="gender">
-                    <input type="radio" value="male" name="Gender"><label for="male">MALE</label>
-                    <input type="radio" value="female" name="Gender"><label for="female">FEMALE</label>
-                </div>
-                <br>
-                <label>PASSWORD: </label>
-                <input type="password" name="Password" placeholder="Enter Password" required><br>
-                <select name="Role" placeholder="Select Your Role" required>
-                    <option value="">--Select Role--</option>
-                    <option value="Trainer">Trainer</option>
-                </select><br>
-                <button type="submit" name="register">Register</button>
-            </form>
-        </div>
+    <section class="backHome">
+        <a href="manage_member.php">Manage Members</a><br>
+        <a href="manage_trainer.php">Manage Trainers</a><br>
     </section>
+         
 
     <!-- FOOTER -->
 

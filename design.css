@@ -993,6 +993,12 @@ a {
     text-decoration: underline;
 }
 
+/*========== MANAGE MEMBER SECTION ==========*/
+
+.table{
+    margin-top: 200px;
+}
+
 /*========== RESPONSIVE DESIGN ==========*/
 
 /* Responsive Footer */
