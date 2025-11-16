@@ -79,10 +79,9 @@ if (!isset($_SESSION['Email']) || $_SESSION['Role'] !== 'admin') {
                 <button type="submit" name="register">Register</button>
             </form>
         </div>
+    </section>
 
     <!-- MANAGE TRAINER -->
-
-    </section>
 
     <section class="table">
         <h1>Trainer INFO</h1>

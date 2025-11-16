@@ -1,9 +1,9 @@
 <?php
 
-$host = "sql305.infinityfree.com";  /* localhost */
-$user = "if0_40168992";  /* root */
-$password = "Ofr243274ok";  /**/
-$database = "if0_40168992_gym_management_system";  /* gym-management-system */
+$host = "localhost";  /*  sql305.infinityfree.com */
+$user = "root";  /* if0_40168992 */
+$password = "";  /* Ofr243274ok */
+$database = "gym-management-system";  /* if0_40168992_gym_management_system */
 
 $conn = new mysqli($host, $user, $password, $database);
 
